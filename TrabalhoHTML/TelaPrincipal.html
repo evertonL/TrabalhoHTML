@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html >
+
+        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estante Virtual - Menu</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+   
+
+</head>
+<body>
+        <div id="menu" class="jumbotron " style="background-image:url(imagens/livros.jpg) " > 
+             
+            <p><input id="buttonCliente" class="btn btn-secondary btn-lg" type="button" value="Cadastrar Cliente" style="width: 300px; height: 50px" onclick="telaCadastroCliente()" ></p>
+            <script type="text/javascript">
+                function telaCadastroCliente()
+                {
+                location.href=" cadastrarCliente.html"
+                }
+            </script>
+
+
+            <p><input id="buttonLivro" class="btn btn-secondary btn-lg" type="button" value="Cadastrar Livro" style="width: 300px; height: 50px" onclick="telaCadastrolivro()"></p>
+            <script type="text/javascript">
+                function telaCadastrolivro()
+                {
+                location.href="cadastrarLivro.html"
+                }
+            </script>
+
+
+            <p><input id="buttonVenda" class="btn btn-secondary btn-lg" type="button" value="Comprar Livro" style="width: 300px; height: 50px" onclick="telaVenderLivro()"></p>
+            <script type="text/javascript">
+                function telaVenderLivro()
+                {
+                location.href="venderLivro.html"
+                }
+            </script>
+
+
+            <p><input id="buttonRelatorio" class="btn btn-secondary btn-lg" type="button" value="Exibir Relatorio" style="width: 300px; height: 50px" onclick="telaRelatorios()"></p>
+            <script type="text/javascript">
+                function telaRelatorios()
+                {
+                location.href="relatorios.html"
+                }
+            </script>
+
+        </div>  
+</body>
+</html>

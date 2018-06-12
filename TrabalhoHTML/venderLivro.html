@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Estante Virtual - Vendas</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+
+</head>
+
+<body style="background-color:rgb(216, 209, 209)">
+    <div class="jumbotron" style="background-image:url(imagens/livrosSuperior.jpg) "> 
+ 
+        <div class="col-sm-3" >
+               
+            <h2 style="color:black">Seja Bem Vindo</h2>
+               
+        </div>
+
+    </div>
+
+    <div class="container" style="color: black">
+
+        <h1 class="page-header">Livros disponiveis:</h1>
+
+        <div class="table-responsive">
+            <table id="tabela" class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+
+                        <th>Nome</th>
+                        <th>Quantidade de Paginas</th>
+                        <th>Altor</th>
+                        <th>Editora</th>
+                        <th>Codigo Do Livro</th>
+                        
+
+                    </tr>
+                </thead>
+              <tbody>
+              </tbody>
+            </table>
+
+        </div>
+        <p><input id="buttonVoltar" class="btn btn-secondary btn-lg" type="button" value="Voltar" style="width: 200px; height: 50px;"  onclick="telaVendas()" ></p>
+        <script type="text/javascript">
+            function telaVendas()
+            {
+                location.href=" TelaPrincipal.html";
+            }
+        </script>
+
+    </div>
+    
+    <script src="js/vendas.js"></script>
+
+</body>
+</html>
